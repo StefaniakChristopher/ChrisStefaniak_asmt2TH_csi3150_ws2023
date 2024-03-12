@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+
+    <!-- This is a coment in HTML -->
+
+    <!-- Insert or link other files like CSS or JS -->
+  </head>
+  <body>
+    <!-- Divisions in the pages -->
+    <!-- TO create a unique label for an HTML element use Attribute : id-->
+    <!-- To create a grouping label for a set of html element use attribute: class-->
+    <!-- for any element, you can give an id as well as a class label-->
+    <div id="first-div-container" class="container">
+      This is some content insdie a div tag
+    </div>
+
+    <h1>List of frequently used HTML tags</h1>
+    <!-- Headings in HTML -->
+    <h1>test</h1>
+    <h2>test</h2>
+    <h3>test</h3>
+    <h4>test</h4>
+    <h5>test</h5>
+    <h6>test</h6>
+
+    <!-- text insertion -->
+    <p>This is a para text</p>
+    <span>This is a text in a span tag</span>
+    <span>this is a 2nd span tag</span>
+
+    <!-- IMages-->
+    <img src="./assets/deer.jpg" alt="This is a picture of a deer" />
+
+    <!-- link to other websites/ your own locations on a page-->
+    <a href="https://oakland.edu" class="anchor-tag-family"
+      >Here is a link to oakland university</a
+    >
+    <a href="./html/projects.html" class="anchor-tag-family"
+      >Here is a link to oakland university</a
+    >
+    <a href="#app-container" class="anchor-tag-family"
+      >Here is a link to app container</a
+    >
+
+    <!-- horizontal rule-->
+    <hr />
+    <!-- forced newlines to be rendered in the browser-->
+    <br />
+    <br />
+    <br />
+
+    <!-- Create lists in our html doc -->
+    <!-- ordered list -->
+    <p>This is my todo list for today in order:</p>
+    <ol>
+      <li>Study</li>
+      <li>Play</li>
+      <li>Chroes</li>
+    </ol>
+
+    <p>This is an example of an unordered list</p>
+    <!-- in emmet abbreviation use # character for id attribute-->
+    <!-- in emmet abbreviation use . character for class attribute-->
+    <!-- in emmet abbreviation use > character for expressing immediate child node-->
+
+    <ul id="unordered-list-todo" class="list-items">
+      <li class="items">Study</li>
+      <li class="items">Play</li>
+      <li class="items">Chores</li>
+      <li class="items">Sleep</li>
+    </ul>
+
+    <hr />
+
+    <br />
+    <br />
+    <br />
+
+    <!-- form elements in html : The way to let users provide input -->
+
+    <form method="GET" action="url/login/">
+      <label for="user-email-field">Please Enter your email ID:</label>
+      <input
+        type="email"
+        name="user-email-field"
+        value=""
+        id="user-email-field"
+        placeholder="abc@gmail.com"
+      />
+      <br />
+      <hr />
+      <!-- There are other types of input please practive them on your own
+        type: text
+        type: date / datetime / datetimelocal
+        type: file
+      -->
+      <label for="user-pwd-field">Enter your Password</label>
+      <input
+        type="password"
+        name="user-pwd-field"
+        value=""
+        id="user-pwd-field"
+      />
+
+      <!-- checkboxes -->
+      <p>Choose your favorite fruit:</p>
+
+      <input type="checkbox" name="apple" id="apple" value="apple" />
+      <label for="apple">Apple</label>
+
+      <input type="checkbox" name="oranges" id="oranges" value="oranges" />
+      <label for="apple">Apple</label>
+
+      <input type="checkbox" name="kiwi" id="kiwi" value="kiwi" />
+      <label for="kiwi">Kiwi</label>
+
+      <!--Radio button-->
+      <p>Pick one sport from the following options</p>
+
+      <input type="radio" name="sports" id="football" value="football" />
+      <label for="football">Football</label>
+
+      <input type="radio" name="sports" id="volleyball" value="volleyball" />
+      <label for="volleyball">Volleyball</label>
+
+      <input type="radio" name="sports" id="hockey" value="hockey" />
+      <label for="hockey">Hockey</label>
+
+      <!-- submission button-->
+      <button type="submit">SUBMIT</button>
+    </form>
+
+    <!-- How to create tables in HTML-->
+    <!--- html tag for bold is <b> ... </b> --- however do not use it-->
+    <!-- rowspan and colspan ===> self study -->
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>John</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>456</td>
+          <td>Jane</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Total Salary</td>
+          <td>500</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Semantic html tags : Very importatnt for a good html devloper-->
+    <!-- See notes in recordings for semantic tag usage to structure the webpage-->
+
+    <!-- multimedia embedding for html-->
+
+    <audio src="./assets/audio_sample.mp3" controls>
+      THis is a sample audio file
+    </audio>
+
+    <!--- video files-->
+    <video src="./assets/video_sample.mpeg" controls>
+      Your browser does not support the embedded video file
+    </video>
+
+    <!-- embed other files like pdf files or websites on you websites -->
+
+    <iframe
+      src="./assets/sample_pdf_file.pdf"
+      frameborder="0"
+      width="100%"
+      height="400px"
+      >Your browser does not support iframe embedding</iframe
+    >
+    <br />
+
+    <iframe src="https://oakland.edu"
+      >your browser does nto support iframe embedding</iframe
+    >
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

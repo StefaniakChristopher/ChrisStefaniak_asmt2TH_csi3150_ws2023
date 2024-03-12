@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h5>
+        Welcome to the Interactive ABCs of CSS Technology learning Website
+      </h5>
+    </header>
+    <section>
+      <h5>
+        Click on the buttons below to reveal and learn the CSS technology
+        features of the corresponding letters
+      </h5>
+    </section>
+    <section class="cards">
+      <div>
+        <div id="A">
+          <img src="./assets/css-letter-a.png" alt="Letter A" />
+          <button onclick="hideLetter('A')">Hide Result</button>
+        </div>
+        <button onclick="showLetter('A')">A</button>
+      </div>
+      <div>
+        <div id="B">
+          <img src="./assets/css-letter-b.png" alt="Letter B" />
+          <button onclick="hideLetter('B')">Hide Result</button>
+        </div>
+        <button onclick="showLetter('B')">B</button>
+      </div>
+      <div>
+        <div id="C">
+          <img src="./assets/css-letter-c.png" alt="Letter C" />
+          <button onclick="hideLetter('C')">Hide Result</button>
+        </div>
+        <button onclick="showLetter('C')">C</button>
+      </div>
+    </section>
+  </body>
+</html>

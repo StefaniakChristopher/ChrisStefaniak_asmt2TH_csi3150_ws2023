@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;900&display=swap");
+/*
+  primary bg color: #A9DDD6
+*/
+
+* {
+  /* reset the browser default css styles in the next 3 lines */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* choose your font-family */
+  font-family: "Poppins", "Courier New", Courier, monospace;
+  /* setup color variables for css */
+  --bg-primary: black; /* invoke --> var(--bg-primary)*/
+  --bg-secondary: #b07156;
+  --font-color-primary: black;
+  --font-color-secondary: #b0aeae;
+  --backup-color: #de6b48;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+section div div button {
+  border: none;
+  background: blue;
+  padding: 5px;
+  width: 200px;
+  margin: 20px;
+}
