@@ -18,10 +18,25 @@
   --backup-color: #de6b48;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 1000px;
+  border: solid 1px red;
+  padding: 2px;
+  padding: 10px;
+}
+
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 120px;
 }
 
 .cards div {
@@ -31,17 +46,51 @@
   align-items: center;
 }
 
+header h5 {
+  padding: 10px;
+  border: solid 1px red;
+}
+
+section h5 {
+  padding: 10px;
+  border: solid 1px red;
+}
+
 h5 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 section div div button {
   border: none;
-  background: blue;
+  background: rgb(108, 148, 236);
   padding: 5px;
+  width: 175px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  border: solid 1px black;
+}
+
+.show-button {
+  border: solid 1px red;
+  padding: 15px;
+  width: 150px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+img {
   width: 200px;
-  margin: 20px;
+}
+
+#A,
+#B,
+#C {
+  visibility: hidden;
+  border: solid 1px red;
 }
